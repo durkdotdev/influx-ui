@@ -1,0 +1,11 @@
+.fixed-container {
+  @apply z-20 fixed left-0 p-6 h-[fit-content] w-full bg-white;
+
+  &, &-bottom {
+    @apply bottom-0 border-t;
+  }
+
+  &-top {
+    @apply top-0 border-b shadow-sm;
+  }
+}

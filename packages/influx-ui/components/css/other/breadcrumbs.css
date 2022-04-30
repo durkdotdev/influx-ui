@@ -1,0 +1,29 @@
+.breadcrumbs {
+  @apply flex items-center space-x-2 text-gray-600;
+
+  &, &-md {
+    @apply text-sm;
+  }
+
+  &-sm {
+    @apply text-xs;
+  }
+
+  &-lg {
+    @apply text-base;
+  }
+}
+
+.breadcrumbs a {
+  @apply hover:underline;
+}
+
+.breadcrumbs li {
+  @apply flex items-center space-x-1;
+
+  &:not(:first-child):before {
+    clip-path: polygon(50% 80%, 100% 30.0%, 100% 50%, 50% 100%, 50% 100%, 0% 50%, 0% 30%);
+    content: "";
+    @apply mr-3 -rotate-90 h-2 w-2 bg-gray-600 rounded;
+  }
+}

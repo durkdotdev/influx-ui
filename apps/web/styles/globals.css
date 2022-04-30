@@ -1,0 +1,48 @@
+#__next {
+  @apply flex flex-col min-h-screen;
+}
+
+/* redeclare to overrride typography settings */
+.breadcrumbs {
+  @apply !pl-0;
+}
+
+.breadcrumbs a, .dropdown-link, .link-text {
+  @apply !no-underline;
+}
+
+.breadcrumbs a {
+  @apply !font-normal !text-gray-600 hover:!underline;
+}
+
+.dropdown-link {
+  @apply text-gray-400 hover:text-gray-600 !important;
+}
+
+.link-text, .link-text-primary {
+  @apply text-primary-400 hover:text-primary-700 border-primary-400 hover:border-primary-700 !important;
+}
+
+.link-text-secondary {
+  @apply text-secondary-400 hover:text-secondary-700 border-secondary-400 hover:border-secondary-700 !important;
+}
+
+.link-text-tertiary {
+  @apply text-tertiary-400 hover:text-tertiary-700 border-tertiary-400 hover:border-tertiary-700 !important;
+}
+
+.link-text-alt {
+  @apply text-black hover:text-gray-800 border-black hover:border-gray-800 !important;
+}
+
+.link-text-light {
+  @apply text-gray-600 hover:text-black border-gray-600 hover:border-black !important;
+}
+
+.link-text-green {
+  @apply text-green-500 hover:text-green-700 border-green-500 hover:border-green-700 !important;
+}
+
+.link-text-red {
+  @apply text-red-600 hover:text-red-700 border-red-600 hover:border-red-700 !important;
+}

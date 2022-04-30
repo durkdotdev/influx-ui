@@ -1,0 +1,27 @@
+.divider {
+  @apply w-full rounded;
+
+  &, &-md {
+    @apply h-[1px] bg-gray-300;
+  }
+
+  &-lg {
+    @apply h-0.5;
+  }
+
+  &-xl {
+    @apply h-1;
+  }
+
+  &-primary {
+    @apply bg-primary-700;
+  }
+
+  &-secondary {
+    @apply bg-secondary-700;
+  }
+
+  &-tertiary {
+    @apply bg-tertiary-700;
+  }
+}

@@ -1,0 +1,51 @@
+.button {
+  @apply px-4 py-1.5 font-bold rounded shadow disabled:bg-gray-400 disabled:hover:bg-gray-400 disabled:cursor-not-allowed;
+
+  & {
+    @apply bg-black hover:bg-gray-800 text-white;
+  }
+
+  &, &-md {
+    @apply text-base;
+  }
+
+  &-sm {
+    @apply text-sm;
+  }
+
+  &-lg {
+    @apply py-2 text-lg;
+  }
+
+  &-full {
+    @apply w-full;
+  }
+
+  &-primary {
+    @apply bg-primary-400 hover:bg-primary-700 text-black;
+  }
+
+  &-secondary {
+    @apply bg-secondary-400 hover:bg-secondary-700;
+  }
+
+  &-tertiary {
+    @apply bg-tertiary-400 hover:bg-tertiary-700;
+  }
+
+  &-alt {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-800 shadow-none;
+  }
+
+  &-light {
+    @apply bg-transparent hover:bg-gray-200 text-gray-800 shadow-none;
+  }
+
+  &-green {
+    @apply bg-green-400 hover:bg-green-500 text-white;
+  }
+
+  &-red {
+    @apply bg-red-700 hover:bg-red-800 text-white;
+  }
+}

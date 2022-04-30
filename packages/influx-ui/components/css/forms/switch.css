@@ -1,0 +1,78 @@
+.switch {
+  @apply relative cursor-pointer h-5 w-10 bg-gray-300 appearance-none rounded-full shadow;
+
+  &:checked,
+  &[checked="true"] {
+    @apply bg-green-400;
+  }
+
+  &-sm {
+    @apply h-4 w-8;
+  }
+
+  &-lg {
+    @apply h-6 w-12;
+  }
+
+  &-primary {
+    &:checked,
+    &[checked="true"] {
+      @apply bg-primary-400;
+    }
+  }
+
+  &-secondary {
+    &:checked,
+    &[checked="true"] {
+      @apply bg-secondary-400;
+    }
+  }
+
+  &-tertiary {
+    &:checked,
+    &[checked="true"] {
+      @apply bg-tertiary-400;
+    }
+  }
+}
+
+.switch::before {
+  content: "";
+  @apply absolute top-1/2 -translate-y-1/2 px-0.5 h-4 w-4 bg-white border rounded-full;
+}
+
+.switch {
+  &:checked::before,
+  &[checked="true"]::before {
+    @apply right-0;
+  }
+}
+
+.switch-sm::before {
+  @apply h-3.5 w-3.5;
+}
+
+.switch-lg::before {
+  @apply h-5 w-5;
+}
+
+.switch-primary::before {
+  &:checked::before,
+  &[checked="true"]::before {
+    @apply border-primary-400;
+  }
+}
+
+.switch-secondary::before {
+  &:checked::before,
+  &[checked="true"]::before {
+    @apply border-secondary-400;
+  }
+}
+
+.switch-tertiary::before {
+  &:checked::before,
+  &[checked="true"]::before {
+    @apply border-tertiary-400;
+  }
+}

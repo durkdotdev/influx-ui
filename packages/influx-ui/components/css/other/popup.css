@@ -1,0 +1,7 @@
+.popup {
+  @apply fixed z-40 !mt-0 left-0 top-0 p-6 h-screen w-screen bg-white;
+}
+
+.popup-close {
+  @apply z-50 fixed !mt-0 right-6 top-6 p-2.5 bg-white hover:bg-gray-200 text-gray-800 hover:text-black text-sm rounded shadow;
+}

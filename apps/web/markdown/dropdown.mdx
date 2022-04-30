@@ -1,0 +1,142 @@
+---
+title: "Dropdown"
+description: "Dropdowns can display content relative to a specific HTML element."
+slug: "dropdown"
+---
+
+# Dropdown
+
+Dropdowns can display content relative to a specific HTML element.
+
+## Example
+
+<DropdownDemo />
+<br />
+
+```jsx
+<div className="dropdown-container">
+  <div className="dropdown">Dropdown content...</div>
+</div>
+```
+
+## Dropdown Links
+
+<DropdownLinkDemo />
+<br />
+
+```jsx
+<div className="dropdown-container">
+  <div className="dropdown">
+    <a className="dropdown-link" href="#">
+      Account Settings
+    </a>
+    <a className="dropdown-link" href="#">
+      Sign Out
+    </a>
+  </div>
+</div>
+```
+
+## React Example
+
+```jsx
+// dropdown.tsx
+
+import { useState } from "react";
+
+const DropdownDemo = () => {
+  const [isShown, setIsShown] = useState < boolean > false;
+
+  return (
+    <div className="dropdown-container">
+      <button
+        className="button button-light"
+        onClick={() => setIsShown(!isShown)}
+      >
+        {isShown ? "Close " : "Open "}Dropdown
+      </button>
+
+      {isShown && <div className="dropdown">Dropdown content...</div>}
+    </div>
+  );
+};
+
+export default DropdownDemo;
+```
+
+## Sizes
+
+<div className="flex space-x-4">
+  <DropdownPropDemo dropdownProp={"sm"} dropdownTitle="Small" />
+  <DropdownPropDemo dropdownProp={"md"} dropdownTitle="Medium" />
+  <DropdownPropDemo dropdownProp={"lg"} dropdownTitle="Large" />
+</div>
+<br />
+
+```jsx
+<div className="dropdown-container">
+  <div className="dropdown dropdown-sm">
+    Dropdown content...
+  </div>
+</div>
+
+<div className="dropdown-container">
+  <div className="dropdown dropdown-md">
+    Dropdown content...
+  </div>
+</div>
+
+<div className="dropdown-container">
+  <div className="dropdown dropdown-lg">
+    Dropdown content...
+  </div>
+</div>
+```
+
+## Orientation
+
+<div className="flex space-x-4">
+  <DropdownPropDemo dropdownProp={"left"} dropdownTitle="Left" />
+  <DropdownPropDemo dropdownProp={"right"} dropdownTitle="Right" />
+</div>
+<br />
+
+```jsx
+<div className="dropdown-container">
+  <div className="dropdown dropdown-left">
+    Dropdown content...
+  </div>
+</div>
+
+<div className="dropdown-container">
+  <div className="dropdown dropdown-right">
+    Dropdown content...
+  </div>
+</div>
+```
+
+## Close on Click Outside
+
+You may use a package such as [`use-onlickoutside`](https://www.npmjs.com/package/use-onclickoutside) to close dropdowns on an outside click:
+
+```jsx
+import useOnClickOutside from "use-onclickoutside";
+
+const DropdownDemo = () => {
+  const ref = useRef(null);
+
+  useOnClickOutside(ref, () => {
+    if (isShown) setIsShown(false);
+  });
+
+  // ...
+
+  return (
+    <div className="dropdown-container" ref={ref}>
+      {/* rest of dropdown... */}
+    </div>
+  );
+
+  //...
+};
+```

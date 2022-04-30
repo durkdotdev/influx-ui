@@ -1,0 +1,59 @@
+---
+title: "Main"
+description: "Main is a slightly styled main HTML element."
+slug: "main"
+---
+
+# Main
+
+Main is a slightly styled [`<main>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main) HTML element.
+
+## Example
+
+<main className="main main-fit-height">Page content...</main>
+
+```jsx
+<main className="main">Page content...</main>
+```
+
+## Sizes
+
+Sizes affect the bottom/top padding of the content within `<main>`.
+
+<main className="main main-sm main-fit-height">Page content...</main>
+<div className="divider" />
+<main className="main main-fit-height">Page content...</main>
+<div className="divider" />
+<main className="main main-lg main-fit-height">Page content...</main>
+
+```jsx
+<main className="main main-sm">
+  Page content...
+</main>
+
+<main className="main">
+  Page content...
+</main>
+
+<main className="main main-lg">
+  Page content...
+</main>
+```
+
+## Height Fit Content
+
+By default, Main has a minimum height of `100vh`. You can choose to have main fit its content:
+
+<main className="main main-fit-height">Page content...</main>
+
+```jsx
+<main className="main-fit-height">Page content...</main>
+```
+
+## Centered Container
+
+<main className="main main-centered main-fit-height">Page content...</main>
+
+```jsx
+<main className="main main-centered">Page content...</main>
+```

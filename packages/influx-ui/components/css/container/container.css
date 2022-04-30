@@ -1,0 +1,35 @@
+.container {
+  @apply flex flex-col w-full;
+
+  &, &-md {
+    @apply max-w-2xl;
+  }
+
+  &, &-spacing-md {
+    @apply space-y-8;
+  }
+
+  &-sm {
+    @apply max-w-lg;
+  }
+
+  &-lg {
+    @apply max-w-4xl;
+  }
+
+  &-xl {
+    @apply max-w-6xl;
+  }
+
+  &-spacing-sm {
+    @apply space-y-4;
+  }
+
+  &-spacing-lg {
+    @apply space-y-16;
+  }
+
+  &-centered {
+    @apply mx-auto;
+  }
+}

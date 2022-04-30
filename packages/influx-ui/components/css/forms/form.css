@@ -1,0 +1,15 @@
+.form {
+  @apply flex flex-col space-y-4 w-full;
+
+  & {
+    @apply max-w-lg;
+  }
+
+  &-sm {
+    @apply max-w-sm;
+  }
+
+  &-lg {
+    @apply max-w-2xl;
+  }
+}

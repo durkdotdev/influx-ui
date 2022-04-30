@@ -1,0 +1,83 @@
+.tabs {
+  @apply flex items-center w-full px-6 sm:justify-center;
+
+  & {
+    @apply bg-black;
+  }
+
+  &-alt {
+    @apply bg-white;
+
+    > ul > .tab {
+      @apply text-gray-700 hover:text-black;
+
+      &-active {
+        @apply text-black;
+      }
+    }
+  }
+
+  &-primary {
+    @apply bg-primary-400;
+
+    > ul > .tab {
+      @apply text-gray-700 hover:text-black;
+
+      &-active {
+        @apply text-black;
+      }
+    }
+  }
+
+  &-secondary {
+    @apply bg-secondary-400;
+
+    > ul > .tab {
+      @apply text-gray-100 hover:text-white;
+
+      &-active {
+        @apply font-bold text-white;
+      }
+    }
+  }
+
+  &-tertiary {
+    @apply bg-tertiary-400;
+
+    > ul > .tab {
+      @apply text-gray-100 hover:text-white;
+
+      &-active {
+        @apply font-bold text-white;
+      }
+    }
+  }
+}
+
+.tabs-list {
+  @apply flex items-center space-x-2;
+}
+
+.tab {
+  @apply p-2.5 cursor-pointer list-none;
+
+  & {
+    @apply text-gray-200 hover:text-white;
+  }
+
+  &, &-md {
+    @apply text-sm;
+  }
+
+  &-sm {
+    @apply text-xs;
+  }
+
+  &-lg {
+    @apply text-lg;
+  }
+
+  &-active {
+    @apply font-bold text-white;
+  }
+}

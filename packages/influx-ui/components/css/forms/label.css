@@ -1,0 +1,19 @@
+.label {
+  @apply flex flex-col space-y-1.5;
+
+  > span {
+    @apply font-bold text-sm;
+  }
+
+  &-lg {
+    @apply flex flex-col space-y-2;
+
+    > span {
+      @apply font-bold text-base;
+    }
+  }
+
+  &-horizontal {
+    @apply items-center flex-row justify-between
+  }
+}

@@ -1,0 +1,58 @@
+---
+title: "Modal"
+description: "Display content over a page with a modal."
+slug: "modal"
+---
+
+# Modal
+
+Display content over a page with a modal.
+
+## Example
+
+<ModalDemo />
+<br />
+<br />
+
+```jsx
+<div className="overlay" />
+<div className="modal">
+  Modal content...
+</div>
+```
+
+## React Example
+
+```jsx
+// modal.tsx
+
+import { useState } from "react";
+
+const ModalDemo = () => {
+  const [isShown, setIsShown] = useState < boolean > false;
+
+  return (
+    <>
+      <button
+        className="button button-light"
+        onClick={() => setIsShown(!isShown)}
+      >
+        Show Modal
+      </button>
+
+      {isShown && (
+        <>
+          <div
+            className="overlay cursor-pointer"
+            onClick={() => setIsShown(!isShown)}
+          />
+
+          <div className="modal">Modal content...</div>
+        </>
+      )}
+    </>
+  );
+};
+
+export default ModalDemo;
+```

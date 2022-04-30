@@ -1,0 +1,57 @@
+---
+title: "Popup"
+description: "Popups are full-page popups to display content on top of a page."
+slug: "popup"
+---
+
+# Overlay
+
+Popups are full-page popups to display content on top of a page.
+
+## Example
+
+<PopupDemo />
+<br />
+
+```jsx
+<div className="popup">
+  <button className="popup-close" onClick={() => setIsShown(!isShown)}>
+    Close
+  </button>
+  Popup content...
+</div>
+```
+
+## React Example
+
+```jsx
+// popup.tsx
+
+import { useState } from "react";
+
+const PopupDemo = () => {
+  const [isShown, setIsShown] = useState(false);
+
+  return (
+    <div>
+      <button
+        className="button button-light"
+        onClick={() => setIsShown(!isShown)}
+      >
+        Open Popup
+      </button>
+
+      {isShown && (
+        <div className="popup">
+          <button className="popup-close" onClick={() => setIsShown(!isShown)}>
+            Close
+          </button>
+          Popup content...
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default PopupDemo;
+```

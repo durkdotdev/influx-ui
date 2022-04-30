@@ -1,0 +1,19 @@
+.sub-text {
+  @apply font-light;
+
+  & {
+    @apply text-sm;
+  }
+
+  &-sm {
+    @apply text-xs;
+  }
+
+  &-lg {
+    @apply text-base;
+  }
+
+  &-alt {
+    @apply text-gray-600;
+  }
+}
