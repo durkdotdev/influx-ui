@@ -1,10 +1,11 @@
 {
   "name": "influx-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "build": "tsup index.ts --format cjs && pnpm components && node concat.ts",
     "components": "postcss --config components components/**/*.css --dir dist/css"
   },
+  "repository": "https://github.com/durkdotdev/influx-ui",
   "main": "./index.ts",
   "types": "./index.ts",
   "license": "MIT",
