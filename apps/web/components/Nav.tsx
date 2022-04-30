@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav className="nav nav-between fixed left-0 top-0">
       <Link href="/">
-        <a className="link-text">Influ UI</a>
+        <a className="link-text">Influx UI</a>
       </Link>
 
       <ul className="flex items-center space-x-4">
