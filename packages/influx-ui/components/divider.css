@@ -24,4 +24,8 @@
   &-tertiary {
     @apply bg-tertiary-700;
   }
+
+  &-light {
+    @apply bg-gray-200;
+  }
 }

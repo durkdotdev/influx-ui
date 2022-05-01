@@ -1,10 +1,10 @@
 {
   "name": "influx-ui",
   "description": "Influx UI is a component library built on top of Tailwind CSS",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "build": "tsup index.ts --format cjs && pnpm components && node concat.ts",
-    "components": "postcss --config components components/**/*.css --dir dist/css",
+    "components": "postcss --config components components/*.css --dir dist/css",
     "publish-pkg": "pnpm build && cd ./dist && npm publish"
   },
   "repository": "https://github.com/durkdotdev/influx-ui",

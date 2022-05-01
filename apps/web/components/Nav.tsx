@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 const Nav = () => {
   return (
-    <nav className="nav nav-between sticky left-0 top-0">
+    <nav className="sticky top-0 left-0 nav nav-between">
       <Link href="/">
         <a className="link-text">Influx UI</a>
       </Link>
@@ -13,7 +13,7 @@ const Nav = () => {
       <ul className="flex items-center space-x-4">
         <li className="hidden md:block">
           <Link href="/getting-started">
-            <a className="p-2 sub-text sub-text-alt hover:bg-gray-200 rounded">
+            <a className="p-2 rounded sub-text sub-text-alt hover:bg-gray-200">
               Get Started
             </a>
           </Link>
@@ -21,16 +21,16 @@ const Nav = () => {
 
         <li>
           <a
-            className="block p-2 text-gray-600 hover:bg-gray-200 rounded"
+            className="block p-2 text-gray-600 rounded hover:bg-gray-200"
             href="https://github.com/durkdotdev/influx-ui"
             rel="noreferrer"
             target="_blank"
           >
-            <FiGithub className="h-4 w-4" />
+            <FiGithub className="w-4 h-4" />
           </a>
         </li>
 
-        <li>
+        <li className="lg:hidden">
           <Menu />
         </li>
       </ul>

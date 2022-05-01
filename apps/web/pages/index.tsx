@@ -34,7 +34,8 @@ const Index = () => {
                 <span className="token attr-name">href</span>
                 <span className="token attr-value">
                   <span className="token punctuation attr-equals">=</span>
-                  <span className="token punctuation">{'"'}</span>/getting-started
+                  <span className="token punctuation">{'"'}</span>
+                  /getting-started
                   <span className="token punctuation">{'"'}</span>
                 </span>
                 <span className="token punctuation">&gt;</span>
