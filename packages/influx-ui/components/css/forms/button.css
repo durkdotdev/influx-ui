@@ -1,5 +1,5 @@
 .button {
-  @apply px-4 py-1.5 font-bold rounded shadow disabled:bg-gray-400 disabled:hover:bg-gray-400 disabled:cursor-not-allowed;
+  @apply px-4 py-[0.4375rem] font-bold rounded shadow disabled:bg-gray-400 disabled:hover:bg-gray-400 disabled:cursor-not-allowed;
 
   & {
     @apply bg-black hover:bg-gray-800 text-white;
@@ -10,7 +10,7 @@
   }
 
   &-sm {
-    @apply text-sm;
+    @apply py-1.5 text-sm;
   }
 
   &-lg {
