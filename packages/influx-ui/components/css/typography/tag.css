@@ -1,0 +1,31 @@
+.tag {
+  @apply px-2.5 font-bold text-sm rounded;
+
+  & {
+    @apply py-1.5 bg-black text-white;
+  }
+
+  &-sm {
+    @apply py-1 text-xs;
+  }
+
+  &-md {
+    @apply text-sm;
+  }
+
+  &-lg {
+    @apply py-[0.4375rem] text-base;
+  }
+
+  &-primary {
+    @apply bg-primary-400 text-black;
+  }
+
+  &-secondary {
+    @apply bg-secondary-400;
+  }
+
+  &-tertiary {
+    @apply bg-tertiary-400;
+  }
+}

@@ -24,5 +24,5 @@
 }
 
 .sidebar-link {
-  @apply p-3 flex items-center space-x-6 hover:bg-gray-50 text-gray-400 hover:text-gray-600 rounded;
+  @apply p-3 flex items-center space-x-6 hover:bg-gray-50 text-gray-600 hover:text-gray-800 rounded;
 }

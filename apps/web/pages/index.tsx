@@ -7,7 +7,6 @@ const Index = () => {
     <>
       <SEO
         description="Influx UI is a component library built on top of Tailwind CSS."
-        title="Influx UI"
         url="https://influx-ui.durk.dev"
       />
 

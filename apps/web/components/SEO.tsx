@@ -9,7 +9,7 @@ interface SEOProps {
 const SEO = ({ title, description, url }: SEOProps) => {
   return (
     <Head>
-      <title>{title} | Influx UI</title>
+      <title>{title ? `${title} | Influx UI` : "Influx UI"}</title>
 
       {description && (
         <>

@@ -24,6 +24,7 @@ export const linkComponents = [
   { href: "/sub-text", title: "Subtext" },
   { href: "/switch", title: "Switch" },
   { href: "/tabs", title: "Tabs" },
+  { href: "/tag", title: "Tag" },
   { href: "/textarea", title: "Text Area" }
 ];
 

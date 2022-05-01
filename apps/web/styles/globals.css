@@ -16,7 +16,7 @@
 }
 
 .dropdown-link, .sidebar-link {
-  @apply text-gray-400 hover:text-gray-600 !important;
+  @apply text-gray-600 hover:text-gray-800 !important;
 }
 
 .link-text, .link-text-primary {
@@ -45,4 +45,8 @@
 
 .link-text-red {
   @apply text-red-600 hover:text-red-700 border-red-600 hover:border-red-700 !important;
+}
+
+.token.tag {
+  @apply !bg-transparent !p-0;
 }
