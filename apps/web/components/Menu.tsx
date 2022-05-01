@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 
 import SidebarMenu from "./SidebarMenu";
 
 const Menu = () => {
+  const router = useRouter();
   const [isShown, setIsShown] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsShown(false);
+  }, [router.asPath])
 
   return (
     <>
