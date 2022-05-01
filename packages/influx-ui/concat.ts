@@ -14,6 +14,8 @@ const main = async () => {
   });
 
   gulp.series(gulp.task("css"))();
+
+  fs.copy("package.json", "dist/package.json");
 };
 
 if (require.main === module) {
