@@ -1,5 +1,5 @@
 .nav {
-  @apply z-30 px-6 flex items-center w-full h-16 bg-white border-b shadow-sm;
+  @apply z-10 px-6 flex items-center w-full h-16 bg-white border-b shadow-sm;
 
   &-between {
     @apply justify-between;
@@ -11,5 +11,5 @@
 }
 
 .nav .dropdown-container {
-  @apply z-40 !important;
+  @apply z-20 !important;
 }

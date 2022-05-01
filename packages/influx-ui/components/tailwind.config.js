@@ -11,12 +11,10 @@ const colors = {
 };
 
 module.exports = {
-  content: [
-    { raw: '' },
-  ],
+  content: [{ raw: "" }],
   theme: {
     extend: {
       colors
     }
-  },
+  }
 };

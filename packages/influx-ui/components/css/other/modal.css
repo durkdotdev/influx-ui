@@ -1,5 +1,5 @@
 .modal {
-  @apply z-50 fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 mx-6 p-6 w-full bg-white border rounded shadow;
+  @apply z-50 fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 p-6 w-[calc(100%-3rem)] bg-white border rounded shadow;
 
   &, &-md {
     @apply max-w-2xl;

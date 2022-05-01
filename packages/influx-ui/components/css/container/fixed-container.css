@@ -1,5 +1,5 @@
 .fixed-container {
-  @apply z-20 fixed left-0 p-6 h-[fit-content] w-full bg-white;
+  @apply z-50 fixed left-0 p-6 h-[fit-content] w-full bg-white;
 
   &, &-bottom {
     @apply bottom-0 border-t;

@@ -1,0 +1,28 @@
+.sidebar {
+  @apply z-40 fixed top-0 p-6 h-screen w-full max-w-[14rem] sm:max-w-xs md:max-w-sm bg-white;
+
+  & {
+    @apply left-0 shadow;
+  }
+
+  &-right {
+    @apply left-auto !important;
+    @apply right-0;
+  }
+
+  &-mobile {
+    @apply hidden md:block md:sticky;
+  }
+
+  &-mobile-lg {
+    @apply hidden lg:block lg:sticky;
+  }
+
+  &-scroll {
+    @apply overflow-y-auto;
+  }
+}
+
+.sidebar-link {
+  @apply p-3 flex items-center space-x-6 hover:bg-gray-50 text-gray-400 hover:text-gray-600 rounded;
+}
