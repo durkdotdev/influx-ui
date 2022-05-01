@@ -1,0 +1,50 @@
+import Link from "next/link";
+
+const Index = () => {
+  return (
+    <div className="absolute left-0 top-0 flex flex-col items-center justify-center space-y-8 h-full min-h-screen w-full min-w-[100vw] bg-gradient-to-br from-[#00E5FF] to-[#D500F9]">
+      <h1 className="font-bold text-4xl text-white">Influx UI</h1>
+      <p className="sub-text text-white">
+        Influx UI is a component library built on top of Tailwind CSS.
+      </p>
+
+      <div className="remark-highlight">
+        <pre className="language-jsx rounded">
+          <code className="language-jsx">
+            <span className="token tag">
+              <span className="token tag">
+                <span className="token punctuation">&lt;</span>a
+              </span>{" "}
+              <span className="token attr-name">className</span>
+              <span className="token attr-value">
+                <span className="token punctuation attr-equals">=</span>
+                <span className="token punctuation">{'"'}</span>button
+                <span className="token punctuation">{'"'}</span>
+              </span>{" "}
+              <span className="token attr-name">href</span>
+              <span className="token attr-value">
+                <span className="token punctuation attr-equals">=</span>
+                <span className="token punctuation">{'"'}</span>/getting-started
+                <span className="token punctuation">{'"'}</span>
+              </span>
+              <span className="token punctuation">&gt;</span>
+            </span>
+            <span className="token plain-text">Get Started</span>
+            <span className="token tag">
+              <span className="token tag">
+                <span className="token punctuation">&lt;/</span>a
+              </span>
+              <span className="token punctuation">&gt;</span>
+            </span>
+          </code>
+        </pre>
+      </div>
+
+      <Link href="/getting-started">
+        <a className="button">Get Started</a>
+      </Link>
+    </div>
+  );
+};
+
+export default Index;

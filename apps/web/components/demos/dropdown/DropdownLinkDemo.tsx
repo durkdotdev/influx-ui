@@ -13,7 +13,7 @@ const DropdownLinkDemo = () => {
       </button>
 
       {isShown && (
-        <div className="dropdown dropdown-right">
+        <div className="dropdown">
           <a className="dropdown-link" href="#">
             Account Settings
           </a>

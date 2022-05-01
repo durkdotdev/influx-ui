@@ -1,0 +1,115 @@
+---
+title: "Sidebar"
+description: "Sidebars are styled aside HTML elements."
+slug: "sidebar"
+next: "Sub Text"
+prev: "Select"
+---
+
+# Sidebar
+
+Sidebars are styled [`<aside>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) HTML elements.
+
+Combined with a controlled state, sidebars can also be used as menus.
+
+## Example
+
+<SidebarDemo />
+<br />
+
+```jsx
+<div className="sidebar">
+  Sidbar content...
+</div>
+```
+
+## Sidebar Link Example
+
+<SidebarLinkDemo />
+<br />
+
+```jsx
+<div className="sidebar">
+  <a className="sidebar-link" href="#">Account Settings</a>
+  <a className="sidebar-link" href="#">Sign Out</a>
+</div>
+```
+
+## React Example
+
+```jsx
+// sidebar.tsx
+
+import { useState } from "react";
+
+const SidebarDemo = () => {
+  const [isShown, setIsShown] = useState(false);
+
+  return (
+    <div>
+      <button
+        className="button button-light"
+        onClick={() => setIsShown(!isShown)}
+      >
+        Show Sidebar
+      </button>
+
+      {isShown && (
+        <>
+          <div
+            className="overlay cursor-pointer"
+            onClick={() => setIsShown(!isShown)}
+          />
+
+          <div className="sidebar">
+            Sidbar content...
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
+
+export default SidebarDemo;
+```
+
+## Right Sidebar
+
+<SidebarPropDemo sidebarProp="right" sidebarTitle="Right" />
+<br />
+
+```jsx
+<div className="sidebar sidebar-right">
+  Sidbar content...
+</div>
+```
+
+## Mobile Sidebar
+
+Sidebar will display on medium sized devices and up, but be hidden on smaller devices:
+
+```jsx
+<div className="sidebar sidebar-mobile">
+  Sidbar content...
+</div>
+```
+
+## Large Screen Sidebar
+
+Sidebar will display on large sized devices only, but be hidden on medium sized and smaller devices:
+
+```jsx
+<div className="sidebar sidebar-mobile-lg">
+  Sidbar content...
+</div>
+```
+
+## Scroll Sidebar Content
+
+To enable vertical scrolling through your sidebar's content, simply add the following class:
+
+```jsx
+<div className="sidebar sidebar-scroll">
+  Sidbar content...
+</div>
+```

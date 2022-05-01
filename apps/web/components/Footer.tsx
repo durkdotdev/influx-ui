@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer flex-col space-y-2">
-      <Link href="/footer">
+      <Link href="/">
         <a className="hover:underline">Influx UI</a>
       </Link>
 

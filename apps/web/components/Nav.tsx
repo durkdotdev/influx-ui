@@ -1,17 +1,19 @@
 import Link from "next/link";
 import { FiGithub } from "react-icons/fi";
 
+import Menu from "./Menu";
+
 const Nav = () => {
   return (
-    <nav className="nav nav-between fixed left-0 top-0">
+    <nav className="nav nav-between sticky left-0 top-0">
       <Link href="/">
         <a className="link-text">Influx UI</a>
       </Link>
 
       <ul className="flex items-center space-x-4">
-        <li>
+        <li className="hidden md:block">
           <Link href="/getting-started">
-            <a className="p-2 sub-text hover:bg-gray-200 hover:underline rounded">
+            <a className="p-2 sub-text sub-text-alt hover:bg-gray-200 rounded">
               Get Started
             </a>
           </Link>
@@ -26,6 +28,10 @@ const Nav = () => {
           >
             <FiGithub className="h-4 w-4" />
           </a>
+        </li>
+
+        <li>
+          <Menu />
         </li>
       </ul>
     </nav>
