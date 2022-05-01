@@ -22,7 +22,7 @@ const Nav = () => {
         <li>
           <a
             className="block p-2 text-gray-600 hover:bg-gray-200 rounded"
-            href="https://github.com"
+            href="https://github.com/durkdotdev/influx-ui"
             rel="noreferrer"
             target="_blank"
           >

@@ -10,7 +10,7 @@ const Menu = () => {
 
   useEffect(() => {
     setIsShown(false);
-  }, [router.asPath])
+  }, [router.asPath]);
 
   return (
     <>
