@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { FiGithub } from "react-icons/fi";
 
 import Menu from "./Menu";
 
 const Nav = () => {
+  const router = useRouter();
+
   return (
     <nav className="sticky top-0 left-0 nav nav-between">
       <Link href="/">
@@ -11,7 +14,7 @@ const Nav = () => {
       </Link>
 
       <ul className="flex items-center space-x-4">
-        <li className="hidden md:block">
+        <li className={router.pathname === "/" ? "block" : "hidden md:block"}>
           <Link href="/getting-started">
             <a className="p-2 rounded sub-text sub-text-alt hover:bg-gray-200">
               Get Started
@@ -30,9 +33,11 @@ const Nav = () => {
           </a>
         </li>
 
-        <li className="lg:hidden">
-          <Menu />
-        </li>
+        {router.pathname !== "/" && (
+          <li className="lg:hidden">
+            <Menu />
+          </li>
+        )}
       </ul>
     </nav>
   );

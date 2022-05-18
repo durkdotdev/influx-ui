@@ -3,11 +3,13 @@ import { useState } from "react";
 interface DropdownPropDemoProps {
   dropdownProp: string;
   dropdownTitle: string;
+  hideTitle?: boolean;
 }
 
 const DropdownPropDemo = ({
   dropdownProp,
-  dropdownTitle
+  dropdownTitle,
+  hideTitle = false
 }: DropdownPropDemoProps) => {
   const [isShown, setIsShown] = useState<boolean>(false);
 
@@ -17,7 +19,7 @@ const DropdownPropDemo = ({
         className="button button-light"
         onClick={() => setIsShown(!isShown)}
       >
-        {dropdownTitle} Dropdown
+        {dropdownTitle}{hideTitle ? "" : " Dropdown"}
       </button>
 
       {isShown && (
