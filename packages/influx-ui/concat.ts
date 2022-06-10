@@ -16,6 +16,7 @@ const main = async () => {
   gulp.series(gulp.task("css"))();
 
   fs.copy("package.json", "dist/package.json");
+  fs.copy("README.md", "dist/README.md");
 };
 
 if (require.main === module) {
