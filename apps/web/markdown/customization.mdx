@@ -1,0 +1,37 @@
+---
+title: "Customization"
+description: "Influx UI is easily customizable."
+slug: "customization"
+next: "Breadcrumbs"
+prev: "Getting Started"
+---
+
+# Customization
+
+Influx UI uses [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), making it incredibly easy to customize.
+
+## Override Influx Variables
+
+```css
+:root {
+  --primary-400: #F3A391 !important;
+  --primary-700: #EF846C !important;
+}
+```
+
+<style jsx="true">{`
+  :root {
+    --primary-400: #F3A391 !important;
+    --primary-700: #EF846C !important;
+  }
+`}</style>
+
+## Use New Variables with Influx Components
+
+<button className="button button-primary">Click Me</button>
+<br />
+<br />
+
+```jsx
+<button class="button button-primary">Click Me</button>
+```

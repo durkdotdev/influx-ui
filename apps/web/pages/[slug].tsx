@@ -51,12 +51,12 @@ export default function ProjectPage({ page, source }: ProjectPageProps) {
       <article className="w-[calc(100vw-3rem)] prose">
         <MDXRemote {...source} />
       </article>
-      <div className="mt-24 flex items-center justify-between">
+      <div className="flex items-center justify-between mt-24">
         {page.prev ? (
           <Link href={`/${page.prev.replace(" ", "-").toLowerCase()}`}>
-            <a className="group flex flex-col space-y-1">
-              <span className="sub-text sub-text-alt">Previous</span>
-              <span className="p-2 text-gray-600 group-hover:bg-gray-200 rounded">
+            <a className="flex flex-col space-y-1 group">
+              <span className="ml-4 sub-text sub-text-alt">Previous</span>
+              <span className="px-4 py-2 text-gray-600 rounded group-hover:bg-gray-200">
                 {page.prev}
               </span>
             </a>
@@ -67,9 +67,9 @@ export default function ProjectPage({ page, source }: ProjectPageProps) {
 
         {page.next ? (
           <Link href={`/${page.next.replace(" ", "-").toLowerCase()}`}>
-            <a className="group flex flex-col space-y-1 text-right">
-              <span className="sub-text sub-text-alt">Next</span>
-              <span className="p-2 text-gray-600 group-hover:bg-gray-200 rounded">
+            <a className="flex flex-col space-y-1 text-right group">
+              <span className="mr-4 sub-text sub-text-alt">Next</span>
+              <span className="px-4 py-2 text-gray-600 rounded group-hover:bg-gray-200">
                 {page.next}
               </span>
             </a>

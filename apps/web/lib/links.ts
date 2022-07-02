@@ -1,5 +1,6 @@
 export const linksTop = [
-  { href: "/getting-started", title: "Getting Started" }
+  { href: "/getting-started", title: "Getting Started" },
+  { href: "/customization", title: "Customization" }
 ];
 
 export const linkComponents = [

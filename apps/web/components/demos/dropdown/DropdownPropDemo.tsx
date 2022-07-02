@@ -19,7 +19,8 @@ const DropdownPropDemo = ({
         className="button button-light"
         onClick={() => setIsShown(!isShown)}
       >
-        {dropdownTitle}{hideTitle ? "" : " Dropdown"}
+        {dropdownTitle}
+        {hideTitle ? "" : " Dropdown"}
       </button>
 
       {isShown && (

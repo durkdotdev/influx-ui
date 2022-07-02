@@ -1,13 +1,13 @@
 const colors = {
-  "primary-200": "#18ffff",
-  "primary-400": "#00e5ff",
-  "primary-700": "#00b8d4",
-  "secondary-200": "#e040fb",
-  "secondary-400": "#d500f9",
-  "secondary-700": "#aa00ff",
-  "tertiary-200": "#536dfe",
-  "tertiary-400": "#3d5afe",
-  "tertiary-700": "#304ffe"
+  "primary-200": "var(--primary-200)",
+  "primary-400": "var(--primary-400)",
+  "primary-700": "var(--primary-700)",
+  "secondary-200": "var(--secondary-200)",
+  "secondary-400": "var(--secondary-400)",
+  "secondary-700": "var(--secondary-700)",
+  "tertiary-200": "var(--tertiary-200)",
+  "tertiary-400": "var(--tertiary-400)",
+  "tertiary-700": "var(--tertiary-700)"
 };
 
 module.exports = {

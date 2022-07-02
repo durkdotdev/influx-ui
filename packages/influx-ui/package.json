@@ -2,7 +2,7 @@
   "name": "influx-ui",
   "description": "Influx UI is a component library built on top of Tailwind CSS",
   "keywords": ["Tailwind CSS", "CSS", "UI design", "Library", "Framework", "UI", "Component", "PostCSS", "Component Library"],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build": "tsup index.ts --format cjs && pnpm components && node concat.ts",
     "components": "postcss --config components components/*.css --dir dist/css",

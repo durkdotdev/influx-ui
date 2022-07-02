@@ -42,9 +42,9 @@ const MyApp = ({
   return (
     <MDXProvider components={components}>
       <Nav />
-      <div className="flex-1 flex">
+      <div className="flex flex-1">
         <SidebarMenu prop="sidebar-mobile-lg !z-0 !top-16 !pt-4 !pb-24 !shadow-none border-r" />
-        <div className="px-6 md:px-8 lg:px-12 pt-8 pb-12 md:pb-16 mx-auto lg:mx-0">
+        <div className="px-6 pt-8 pb-12 mx-auto md:px-8 lg:px-12 md:pb-16">
           <Component {...pageProps} />
         </div>
       </div>
