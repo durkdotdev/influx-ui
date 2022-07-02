@@ -25,7 +25,7 @@ const Index = () => {
                 <span className="token tag">
                   <span className="token punctuation">&lt;</span>a
                 </span>{" "}
-                <span className="token attr-name">className</span>
+                <span className="token attr-name">class</span>
                 <span className="token attr-value">
                   <span className="token punctuation attr-equals">=</span>
                   <span className="token punctuation">{'"'}</span>button
